@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
 
-public class Tic_Tac_Toe
+public class NimisTic
 {
     Scanner sc = new Scanner(System.in);
     String tic[][]=new String[3][3];
@@ -195,14 +195,16 @@ public class Tic_Tac_Toe
     void again()
     {
         System.out.println("Would you like to play again?");
-        String resp1=sc.nextLine();
+        String resp1=sc.next();
         if (resp1.equalsIgnoreCase("Yes"))
         {
           System.out.println("Good.");
           players();
         }
         else if(resp1.equalsIgnoreCase("No"))
-         { System.out.println("K."); }
+        { 
+          System.out.println("K."); 
+        }
     }
     
     void game()
